@@ -34,7 +34,7 @@ body{
 .cardTitle{
     background: #fdc02f;
 }
-.button{
+.res{
     background: #fdc02f;
     text-align: center;
     color: black;
@@ -66,5 +66,9 @@ body{
 .section input[type='radio']{
     -webkit-appearance:none;  
 }
- 
-    
+#carouselButton {
+    right:0px;
+    position: absolute;
+    bottom: 0px;
+    z-index: 1;
+}

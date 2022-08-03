@@ -167,7 +167,7 @@
                 </div>
                 <div class="col-12 col-md-3  align-self-center">
                     <!-- include this as attribute to a tag for activating toottip    data-toggle="tool-tip" data-html="true" title="Or Call us at <br><strong>+852 12345678</strong>" data-placement="bottom" href="#item-1" role="button" -->
-                    <a class="btn-sm btn-info btn-block button" data-toggle="modal" data-target="#reservation">Reserve Table</a>
+                    <a class="btn-sm btn-info btn-block res" data-toggle="modal" data-target="#reservation">Reserve Table</a>
                 </div>
             </div>
         </div>
@@ -211,6 +211,14 @@
                     <a class="carousel-control-next" href="#mycarousel" role="button" data-slide="next">
                         <span class="carousel-control-next-icon"></span>
                     </a>
+                    <div class="btn-group" id="carouselButton">
+                        <button class="button btn-danger btn-sm" id="carousel-pause">
+                            <span class="fa fa-pause"></span>
+                        </button>
+                        <button class="button btn-danger btn-sm" id="carousel-play">
+                            <span class="fa fa-play"></span>
+                        </button>
+                    </div>
                 </div>
             </div>
         </div>
@@ -304,8 +312,10 @@
                 <div class="col-auto">
                     <p>© Copyright 2018 Ristorante Con Fusion</p>
                 </div>
+               
            </div>
         </div>
+        
     </footer>
 
        <!-- jQuery first, then Popper.js, then Bootstrap JS. -->
@@ -317,6 +327,19 @@
         // $(document).ready(function(){
         //     $('[data-toggle="tool-tip"]').tooltip();
         // });
+    
+        // ---------Carousel Button ---------------
+        $(document).ready(function(){
+            $("#mycarousel").carousel( { interval: 2000 } );
+            $("#carousel-pause").click(function(){
+                $("#mycarousel").carousel('pause');
+            });
+            $("#carousel-play").click(function(){
+                $("#mycarousel").carousel('cycle');
+            });
+        });
+
+        
        </script>
 
 </body>
