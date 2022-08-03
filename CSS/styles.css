@@ -54,3 +54,21 @@ body {
   bottom: 0px;
   position: absolute;
 }
+.res{
+  background: #fdc02f;
+  text-align: center;
+  color: black;
+  padding: 10px 25px 10px 25px;
+  font-weight: 500;
+
+}
+.modal-header{
+  background-color: #512da8;
+  color: floralwhite;
+}
+.modal-body{
+  background-color:#D1C4E9 ;
+}
+ .dismiss{
+  color: floralwhite;
+ }
